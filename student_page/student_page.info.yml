@@ -1,0 +1,5 @@
+name: 'Student Page'
+type: module
+description: 'Student Page Content Type'
+core: 8.x
+package: 'IITB Content Type'

@@ -1,0 +1,44 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.ta_topic_choice.body
+    - field.field.node.ta_topic_choice.field_principal_investigator_s_
+    - field.field.node.ta_topic_choice.field_user_reference
+    - node.type.ta_topic_choice
+  module:
+    - text
+    - user
+id: node.ta_topic_choice.default
+targetEntityType: node
+bundle: ta_topic_choice
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_principal_investigator_s_:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_user_reference:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

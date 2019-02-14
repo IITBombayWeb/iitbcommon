@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - staff_page
+name: 'CHE Staff Category'
+vid: chem_staff_category
+description: 'Contains the CHE Staff Category'
+hierarchy: 0
+weight: 0

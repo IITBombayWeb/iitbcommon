@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_student_current_employment
+    - node.type.student_page
+  enforced:
+    module:
+      - student_page
+  module:
+    - text
+id: node.student_page.field_student_current_employment
+field_name: field_student_current_employment
+entity_type: node
+bundle: student_page
+label: Employment
+description: 'Your current employment or higher study'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,36 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - laboratory_facility
+  module:
+    - field_permissions
+    - node
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: node.field_status_of_facility
+field_name: field_status_of_facility
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: 'Working Condition'
+      label: 'Working Condition'
+    -
+      value: Non-functional
+      label: Non-functional
+    -
+      value: 'Under Repair/Maintenance'
+      label: 'Under Repair/Maintenance'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

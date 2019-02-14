@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_source_of_funding
+    - node.type.laboratory_facility
+  enforced:
+    module:
+      - laboratory_facility
+  module:
+    - options
+id: node.laboratory_facility.field_source_of_funding
+field_name: field_source_of_funding
+entity_type: node
+bundle: laboratory_facility
+label: 'Source of Funding'
+description: 'Select the source of funding'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

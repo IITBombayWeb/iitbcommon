@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chem_staff_category
+    - node.type.staff_page
+    - taxonomy.vocabulary.chem_staff_category
+  enforced:
+    module:
+      - staff_page
+id: node.staff_page.field_chem_staff_category
+field_name: field_chem_staff_category
+entity_type: node
+bundle: staff_page
+label: 'CHE Staff Category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      chem_staff_category: chem_staff_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

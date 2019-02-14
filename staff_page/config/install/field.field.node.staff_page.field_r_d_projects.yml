@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_r_d_projects
+    - node.type.staff_page
+  enforced:
+    module:
+      - staff_page
+  module:
+    - text
+id: node.staff_page.field_r_d_projects
+field_name: field_r_d_projects
+entity_type: node
+bundle: staff_page
+label: 'R&D Projects'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

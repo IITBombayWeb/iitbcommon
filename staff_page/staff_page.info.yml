@@ -1,0 +1,5 @@
+name: 'Staff Page'
+type: module
+description: 'Staff Page Content Type'
+core: 8.x
+package: 'IITB Content Type'

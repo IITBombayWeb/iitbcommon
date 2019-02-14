@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - research_glimpses
+_core:
+  default_config_hash: 7F9QbTJP5Rg5_QeRL3aMHkwMY4Uhjinv-zFSzL8tuF8
+name: 'Research Glimpse Category'
+vid: research_glimpse_category
+description: 'Categorization of Research Glimpse '
+hierarchy: 0
+weight: 0

@@ -1,0 +1,5 @@
+name: 'TA Topic Choice'
+type: module
+description: 'TA Topic Choice Content Type'
+core: 8.x
+package: 'IITB Content Type'

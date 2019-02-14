@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_the_facility
+    - node.type.laboratory_facility
+  enforced:
+    module:
+      - laboratory_facility
+  module:
+    - options
+id: node.laboratory_facility.field_type_of_the_facility
+field_name: field_type_of_the_facility
+entity_type: node
+bundle: laboratory_facility
+label: 'Type of the Facility'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

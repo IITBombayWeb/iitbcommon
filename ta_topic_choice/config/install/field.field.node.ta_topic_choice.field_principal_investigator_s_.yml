@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_principal_investigator_s_
+    - node.type.fac_page
+    - node.type.ta_topic_choice
+  enforced:
+    module:
+      - ta_topic_choice
+id: node.ta_topic_choice.field_principal_investigator_s_
+field_name: field_principal_investigator_s_
+entity_type: node
+bundle: ta_topic_choice
+label: 'Principal Investigator(s)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      fac_page: fac_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

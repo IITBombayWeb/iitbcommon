@@ -1,0 +1,105 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.laboratory_facility.body
+    - field.field.node.laboratory_facility.field_cost_of_purchase
+    - field.field.node.laboratory_facility.field_date_of_purchase
+    - field.field.node.laboratory_facility.field_facility_access_available_
+    - field.field.node.laboratory_facility.field_indented_by_faculty_
+    - field.field.node.laboratory_facility.field_instrument_class
+    - field.field.node.laboratory_facility.field_purpose_of_equipment
+    - field.field.node.laboratory_facility.field_source_of_funding
+    - field.field.node.laboratory_facility.field_status_of_facility
+    - field.field.node.laboratory_facility.field_type_of_the_facility
+    - node.type.laboratory_facility
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.laboratory_facility.default
+targetEntityType: node
+bundle: laboratory_facility
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_cost_of_purchase:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_date_of_purchase:
+    weight: 107
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_facility_access_available_:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_indented_by_faculty_:
+    weight: 111
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_instrument_class:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_purpose_of_equipment:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_source_of_funding:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_status_of_facility:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_type_of_the_facility:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

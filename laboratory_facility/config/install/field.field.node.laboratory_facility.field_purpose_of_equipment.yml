@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_purpose_of_equipment
+    - node.type.laboratory_facility
+  enforced:
+    module:
+      - laboratory_facility
+id: node.laboratory_facility.field_purpose_of_equipment
+field_name: field_purpose_of_equipment
+entity_type: node
+bundle: laboratory_facility
+label: 'Purpose of Equipment'
+description: 'Provide a short description of the capability of the facility (A punchline of about 20 word max)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

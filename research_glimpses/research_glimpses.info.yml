@@ -1,0 +1,5 @@
+name: 'Research Glimpses'
+type: module
+description: 'Research Glimpses Content Type'
+core: 8.x
+package: 'IITB Content Type'

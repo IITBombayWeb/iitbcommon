@@ -1,0 +1,5 @@
+name: 'Laboratory Facility'
+type: module
+description: 'Laboratory Facility Content Type'
+core: 8.x
+package: 'IITB Content Type'
