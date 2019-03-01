@@ -5,8 +5,8 @@ dependencies:
     - field.field.node.staff_page.body
     - field.field.node.staff_page.field_awards_and_fellowships
     - field.field.node.staff_page.field_building
-    - field.field.node.staff_page.field_chem_staff_category
-    - field.field.node.staff_page.field_chem_staff_head
+    - field.field.node.staff_page.field_staff_category
+    - field.field.node.staff_page.field_staff_head
     - field.field.node.staff_page.field_email
     - field.field.node.staff_page.field_lab_room_number
     - field.field.node.staff_page.field_mobile_number
@@ -50,7 +50,7 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
-  field_chem_staff_category:
+  field_staff_category:
     weight: 12
     label: above
     settings:
@@ -58,7 +58,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_chem_staff_head:
+  field_staff_head:
     weight: 13
     label: above
     settings:

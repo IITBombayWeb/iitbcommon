@@ -18,8 +18,8 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: 'ChE Department Users Only'
-      label: 'ChE Department Users Only'
+      value: 'Department Users Only'
+      label: 'Department Users Only'
     -
       value: 'IITB Users'
       label: 'IITB Users'

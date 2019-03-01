@@ -4,8 +4,8 @@ dependencies:
   enforced:
     module:
       - staff_page
-name: 'CHE Staff Category'
-vid: chem_staff_category
-description: 'Contains the CHE Staff Category'
+name: 'Staff Category'
+vid: staff_category
+description: 'Contains the staff category'
 hierarchy: 0
 weight: 0
