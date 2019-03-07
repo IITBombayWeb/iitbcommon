@@ -22,6 +22,9 @@ dependencies:
     - field.field.node.student_page.field_student_roll_number
     - field.field.node.student_page.field_student_year_of_admission
     - node.type.student_page
+  enforced:
+    module:
+      - student_page
   module:
     - image
     - link

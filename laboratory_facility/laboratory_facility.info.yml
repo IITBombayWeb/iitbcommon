@@ -3,3 +3,13 @@ type: module
 description: 'Laboratory Facility Content Type'
 core: 8.x
 package: 'IITB Content Type'
+dependencies:
+  - drupal:menu_ui
+  - drupal:node
+  - drupal:options
+  - drupal:datetime
+  - drupal:text
+  - drupal:user
+  - drupal:path
+  - field_permissions:field_permissions
+  - acadmix_faculty:acadmix_faculty

@@ -10,8 +10,10 @@ dependencies:
     - field.field.node.course_allotment.field_facultynode
     - field.field.node.course_allotment.field_semester
     - field.field.node.course_allotment.field_staff_noderef
-    - field.field.node.course_allotment.field_student_noderef
     - node.type.course_allotment
+  enforced:
+    module:
+      - course_allotment
   module:
     - datetime
     - link
@@ -83,15 +85,6 @@ content:
     region: content
   field_staff_noderef:
     weight: 129
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_student_noderef:
-    weight: 128
     settings:
       match_operator: CONTAINS
       size: 60

@@ -6,8 +6,6 @@ dependencies:
       - research_glimpses
   module:
     - node
-_core:
-  default_config_hash: 3EeZ1k42phLQoAVrJSYF8QaNbmCjymh0Wu8iPZn3GRY
 id: node.field_faculty_name_ref
 field_name: field_faculty_name_ref
 entity_type: node

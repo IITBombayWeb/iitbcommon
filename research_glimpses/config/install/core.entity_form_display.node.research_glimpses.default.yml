@@ -8,6 +8,9 @@ dependencies:
     - field.field.node.research_glimpses.field_image_glimpse
     - image.style.thumbnail
     - node.type.research_glimpses
+  enforced:
+    module:
+      - research_glimpses
   module:
     - image
     - path

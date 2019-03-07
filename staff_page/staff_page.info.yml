@@ -3,3 +3,17 @@ type: module
 description: 'Staff Page Content Type'
 core: 8.x
 package: 'IITB Content Type'
+dependencies:
+  - drupal:menu_ui
+  - drupal:file
+  - drupal:image
+  - drupal:node
+  - drupal:options
+  - drupal:taxonomy
+  - drupal:text
+  - drupal:user
+  - drupal:path 
+  - drupal:responsive_image
+  - ds:ds
+  - name:name
+  - field_permissions:field_permissions

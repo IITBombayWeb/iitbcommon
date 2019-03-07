@@ -17,6 +17,9 @@ dependencies:
     - field.field.node.staff_page.field_staff_photo
     - node.type.staff_page
     - responsive_image.styles.narrow
+  enforced:
+    module:
+      - staff_page
   module:
     - ds
     - name

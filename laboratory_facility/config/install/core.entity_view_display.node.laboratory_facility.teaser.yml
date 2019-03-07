@@ -5,6 +5,9 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.laboratory_facility.body
     - node.type.laboratory_facility
+  enforced:
+    module:
+      - laboratory_facility
   module:
     - text
     - user

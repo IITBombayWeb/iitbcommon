@@ -5,6 +5,9 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.course_details.body
     - node.type.course_details
+  enforced:
+      module:
+        - course_details
   module:
     - text
     - user

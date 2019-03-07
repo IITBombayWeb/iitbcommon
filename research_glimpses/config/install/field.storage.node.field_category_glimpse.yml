@@ -7,8 +7,6 @@ dependencies:
   module:
     - node
     - taxonomy
-_core:
-  default_config_hash: Um0Sp90lHt8COKl5Kon47Zao6Q2wRi80VfBSi-dYCbo
 id: node.field_category_glimpse
 field_name: field_category_glimpse
 entity_type: node

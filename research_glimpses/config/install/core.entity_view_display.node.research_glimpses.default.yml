@@ -7,6 +7,9 @@ dependencies:
     - field.field.node.research_glimpses.field_faculty_name_ref
     - field.field.node.research_glimpses.field_image_glimpse
     - node.type.research_glimpses
+  enforced:
+    module:
+      - research_glimpses
   module:
     - ds
     - slick

@@ -5,6 +5,9 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.staff_page.body
     - node.type.staff_page
+  enforced:
+    module:
+      - staff_page
   module:
     - text
     - user

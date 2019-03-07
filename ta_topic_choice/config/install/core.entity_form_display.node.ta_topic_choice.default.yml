@@ -6,6 +6,9 @@ dependencies:
     - field.field.node.ta_topic_choice.field_principal_investigator_s_
     - field.field.node.ta_topic_choice.field_user_reference
     - node.type.ta_topic_choice
+  enforced:
+    module:
+      - ta_topic_choice
   module:
     - path
     - text

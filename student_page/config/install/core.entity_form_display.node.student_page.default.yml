@@ -23,6 +23,9 @@ dependencies:
     - field.field.node.student_page.field_student_year_of_admission
     - image.style.thumbnail
     - node.type.student_page
+  enforced:
+    module:
+      - student_page
   module:
     - image
     - link

@@ -17,6 +17,9 @@ dependencies:
     - field.field.node.staff_page.field_staff_photo
     - image.style.thumbnail
     - node.type.staff_page
+  enforced:
+    module:
+      - staff_page
   module:
     - image
     - name

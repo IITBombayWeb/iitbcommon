@@ -8,8 +8,6 @@ dependencies:
     - file
     - image
     - node
-_core:
-  default_config_hash: Hr9HxTJDPc16B-JrmgDAwtDgxvyXlLAQozLQSvlTPqo
 id: node.field_image_glimpse
 field_name: field_image_glimpse
 entity_type: node

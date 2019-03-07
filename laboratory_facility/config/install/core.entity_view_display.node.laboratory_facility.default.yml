@@ -13,6 +13,9 @@ dependencies:
     - field.field.node.laboratory_facility.field_status_of_facility
     - field.field.node.laboratory_facility.field_type_of_the_facility
     - node.type.laboratory_facility
+  enforced:
+    module:
+      - laboratory_facility
   module:
     - datetime
     - options

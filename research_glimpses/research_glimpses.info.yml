@@ -3,3 +3,14 @@ type: module
 description: 'Research Glimpses Content Type'
 core: 8.x
 package: 'IITB Content Type'
+dependencies:
+  - drupal:menu_ui
+  - drupal:file
+  - drupal:image
+  - drupal:node
+  - drupal:taxonomy
+  - drupal:text
+  - drupal:user
+  - drupal:path
+  - ds:ds
+  - slick:slick

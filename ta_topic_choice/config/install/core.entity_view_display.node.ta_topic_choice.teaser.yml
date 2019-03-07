@@ -5,6 +5,9 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.ta_topic_choice.body
     - node.type.ta_topic_choice
+  enforced:
+    module:
+      - ta_topic_choice
   module:
     - text
     - user
