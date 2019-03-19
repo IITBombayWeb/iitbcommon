@@ -15,16 +15,16 @@ dependencies:
     - field.field.node.staff_page.field_staff_designation
     - field.field.node.staff_page.field_staff_full_name
     - field.field.node.staff_page.field_staff_photo
+    - image.style.iitb_staff_max_325x325
     - node.type.staff_page
-    - responsive_image.styles.narrow
   enforced:
     module:
       - staff_page
   module:
     - ds
+    - image
     - name
     - options
-    - responsive_image
     - text
     - user
 id: node.staff_page.default
@@ -133,7 +133,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      responsive_image_style: narrow
+      image_style: iitb_staff_max_325x325
       image_link: ''
     third_party_settings:
       ds:

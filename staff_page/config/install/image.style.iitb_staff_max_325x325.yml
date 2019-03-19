@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - staff_page
+name: iitb_staff_max_325x325
+label: 'IITB Staff Max 325x325'
+effects:
+  018569f8-9172-4ae7-943b-51b037470e95:
+    uuid: 018569f8-9172-4ae7-943b-51b037470e95
+    id: image_scale
+    weight: 1
+    data:
+      width: 325
+      height: 325
+      upscale: false
