@@ -165,7 +165,7 @@ content:
             fis-def-at: false
             fi: false
             fi-def-at: false
-    type: responsive_image
+    type: image
     region: content
   links:
     weight: 0
