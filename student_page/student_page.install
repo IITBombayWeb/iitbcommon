@@ -10,7 +10,7 @@ function student_page_uninstall() {
 
   // Query all entity.
   $query = $queryFactory->get('node')
-    ->condition('type', 'event'); // <-- Change the type here for yours.
+    ->condition('type', 'student_page'); // <-- Change the type here for yours.
   $nids = $query->execute();
 
   // Delete entities.

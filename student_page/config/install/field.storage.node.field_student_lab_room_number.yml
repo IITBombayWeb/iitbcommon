@@ -6,14 +6,13 @@ dependencies:
       - student_page
   module:
     - node
-    - text
 id: node.field_student_lab_room_number
 field_name: field_student_lab_room_number
 entity_type: node
-type: text
+type: string
 settings:
   max_length: 255
-module: text
+module: core
 locked: false
 cardinality: 1
 translatable: true

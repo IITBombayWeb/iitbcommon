@@ -7,8 +7,6 @@ dependencies:
   enforced:
     module:
       - student_page
-  module:
-    - text
 id: node.student_page.field_student_mobile_number
 field_name: field_student_mobile_number
 entity_type: node
@@ -20,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: string

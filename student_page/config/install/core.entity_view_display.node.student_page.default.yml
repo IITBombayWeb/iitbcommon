@@ -70,7 +70,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_student_current_employment:
     weight: 108
@@ -91,7 +91,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    type: email_mailto
     region: content
   field_student_employment_history:
     weight: 109
@@ -121,28 +121,28 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_student_lab_room_number:
     weight: 112
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_student_mobile_number:
     weight: 113
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_student_phone_no:
     weight: 114
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_student_photo:
     weight: 115
@@ -177,7 +177,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_student_year_of_admission:
     weight: 119

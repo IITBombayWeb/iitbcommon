@@ -51,7 +51,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_staff_category:
     weight: 12
@@ -83,21 +83,21 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_mobile_number:
     weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_phone_no:
     weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: string
     region: content
   field_r_d_projects:
     weight: 4

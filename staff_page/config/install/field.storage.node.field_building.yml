@@ -6,14 +6,13 @@ dependencies:
       - staff_page
   module:
     - node
-    - text
 id: node.field_building
 field_name: field_building
 entity_type: node
-type: text
+type: string
 settings:
   max_length: 255
-module: text
+module: core
 locked: false
 cardinality: 1
 translatable: true

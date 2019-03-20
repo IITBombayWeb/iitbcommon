@@ -10,7 +10,7 @@ function course_allotment_uninstall() {
 
   // Query all entity.
   $query = $queryFactory->get('node')
-    ->condition('type', 'event'); // <-- Change the type here for yours.
+    ->condition('type', 'course_allotment'); // <-- Change the type here for yours.
   $nids = $query->execute();
 
   // Delete entities.

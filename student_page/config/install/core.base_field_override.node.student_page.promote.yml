@@ -2,20 +2,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_student_building
     - node.type.student_page
   enforced:
     module:
       - student_page
-id: node.student_page.field_student_building
-field_name: field_student_building
+id: node.student_page.promote
+field_name: promote
 entity_type: node
 bundle: student_page
-label: Building
+label: 'Promoted to front page'
 description: ''
 required: false
-translatable: false
-default_value: {  }
+translatable: true
+default_value:
+  -
+    value: 0
 default_value_callback: ''
-settings: {  }
-field_type: string
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
