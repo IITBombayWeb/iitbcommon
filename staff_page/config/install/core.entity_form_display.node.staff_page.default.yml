@@ -15,7 +15,7 @@ dependencies:
     - field.field.node.staff_page.field_staff_full_name
     - field.field.node.staff_page.field_staff_head
     - field.field.node.staff_page.field_staff_photo
-    - image.style.thumbnail
+    - image.style.iitb_staff_thumbnail_100_100_
     - node.type.staff_page
   enforced:
     module:
@@ -132,7 +132,7 @@ content:
   field_staff_photo:
     weight: 15
     settings:
-      preview_image_style: thumbnail
+      preview_image_style: iitb_staff_thumbnail_100_100_
       progress_indicator: throbber
     third_party_settings: {  }
     type: image_image
