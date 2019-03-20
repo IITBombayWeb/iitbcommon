@@ -132,7 +132,7 @@ content:
   field_staff_photo:
     weight: 131
     settings:
-      preview_image_style: thumbnail
+      preview_image_style: iitb_staff_thumbnail_100_100_
       progress_indicator: throbber
     third_party_settings: {  }
     type: image_image
