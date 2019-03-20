@@ -15,7 +15,7 @@ dependencies:
     - field.field.node.staff_page.field_staff_designation
     - field.field.node.staff_page.field_staff_full_name
     - field.field.node.staff_page.field_staff_photo
-    - image.style.thumbnail
+    - image.style.iitb_staff_thumbnail_100_100_
     - node.type.staff_page
   enforced:
     module:
