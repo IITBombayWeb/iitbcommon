@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_labfac_image
+    - node.type.laboratory_facility
+  enforced:
+    module:
+      - laboratory_facility
+  module:
+    - image
+id: node.laboratory_facility.field_labfac_image
+field_name: field_labfac_image
+entity_type: node
+bundle: laboratory_facility
+label: 'Labfac Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: labfacimages
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.laboratory_facility.field_facility_access_available_
     - field.field.node.laboratory_facility.field_indented_by_faculty_
     - field.field.node.laboratory_facility.field_instrument_class
+    - field.field.node.laboratory_facility.field_labfac_image
     - field.field.node.laboratory_facility.field_purpose_of_equipment
     - field.field.node.laboratory_facility.field_source_of_funding
     - field.field.node.laboratory_facility.field_status_of_facility
@@ -18,7 +19,9 @@ dependencies:
       - laboratory_facility
   module:
     - datetime
+    - ds
     - options
+    - slick
     - text
     - user
 id: node.laboratory_facility.default
@@ -72,6 +75,109 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
+  field_labfac_image:
+    weight: 112
+    label: above
+    settings:
+      style: ''
+      optionset: node_img_slider
+      optionset_thumbnail: ''
+      skin: ''
+      skin_thumbnail: ''
+      image_style: iitb_laborartory_facility_thumbnail_400_300_
+      thumbnail_style: ''
+      responsive_image_style: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      media_switch: ''
+      ratio: ''
+      grid: null
+      grid_medium: null
+      grid_small: null
+      visible_items: null
+      layout: ''
+      thumbnail_caption: ''
+      cache: 0
+      override: true
+      overridables:
+        arrows: arrows
+        autoplay: autoplay
+        dots: dots
+        draggable: draggable
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      sizes: ''
+      breakpoints:
+        xs:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        sm:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        md:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        lg:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+        xl:
+          image_style: ''
+          width: ''
+          breakpoint: ''
+      current_view_mode: default
+      background: false
+      caption:
+        title: '0'
+        alt: '0'
+      grid_header: ''
+      preserve_keys: false
+      skin_arrows: ''
+      skin_dots: ''
+      iframe_lazy: true
+      icon: ''
+      view_mode: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_style: ''
+      box_media_style: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    type: slick_image
+    region: content
   field_purpose_of_equipment:
     weight: 103
     label: above
@@ -104,5 +210,7 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   langcode: true

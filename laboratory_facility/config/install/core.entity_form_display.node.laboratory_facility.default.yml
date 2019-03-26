@@ -8,16 +8,19 @@ dependencies:
     - field.field.node.laboratory_facility.field_facility_access_available_
     - field.field.node.laboratory_facility.field_indented_by_faculty_
     - field.field.node.laboratory_facility.field_instrument_class
+    - field.field.node.laboratory_facility.field_labfac_image
     - field.field.node.laboratory_facility.field_purpose_of_equipment
     - field.field.node.laboratory_facility.field_source_of_funding
     - field.field.node.laboratory_facility.field_status_of_facility
     - field.field.node.laboratory_facility.field_type_of_the_facility
+    - image.style.iitb_laborartory_facility_thumbnail_100_100_
     - node.type.laboratory_facility
   enforced:
     module:
       - laboratory_facility
   module:
     - datetime
+    - image
     - path
     - text
 id: node.laboratory_facility.default
@@ -74,6 +77,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_labfac_image:
+    weight: 132
+    settings:
+      preview_image_style: iitb_laborartory_facility_thumbnail_100_100_
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_purpose_of_equipment:
     weight: 123

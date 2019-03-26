@@ -11,5 +11,9 @@ dependencies:
   - drupal:text
   - drupal:user
   - drupal:path
+  - drupal:image
+  - drupal:file
+  - ds:ds
+  - slick_ui:slick_ui
   - field_permissions:field_permissions
   - acadmix_faculty:acadmix_faculty
