@@ -1,12 +1,10 @@
+uuid: bb32ab1b-e54f-4bac-89bf-b0763ce15e29
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_course_texts
     - node.type.course_details
-  enforced:
-      module:
-        - course_details
   module:
     - text
 id: node.course_details.field_course_texts
@@ -20,4 +18,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: text_long

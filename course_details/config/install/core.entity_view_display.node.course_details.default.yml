@@ -1,3 +1,4 @@
+uuid: 83378ebe-8dc3-41ac-ac25-8aeb9c051f29
 langcode: en
 status: true
 dependencies:
@@ -12,13 +13,15 @@ dependencies:
     - field.field.node.course_details.field_tutorial_credit
     - node.type.course_details
   enforced:
-      module:
-        - course_details
+    module:
+      - course_details
   module:
     - computed_field
     - options
     - text
     - user
+_core:
+  default_config_hash: LU2ZsBoN5K7nvYvvxj4slqMgdGYfJ210P1ZTZan7qvU
 id: node.course_details.default
 targetEntityType: node
 bundle: course_details
