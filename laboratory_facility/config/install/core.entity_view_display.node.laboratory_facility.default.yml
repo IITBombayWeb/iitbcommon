@@ -261,11 +261,11 @@ content:
             ow-at: ''
             fis: true
             fis-el: ul
-            fis-cl: col-sm-9
+            fis-cl: 'col-sm-9 list-unstyled'
             fis-at: ''
             fi: true
             fi-el: li
-            fi-cl: list-unstyled
+            fi-cl: ''
             fi-at: ''
             suffix: ''
             lb-col: false
@@ -536,12 +536,12 @@ content:
             ow-el: div
             ow-cl: 'row mb-10'
             ow-at: ''
-            fis-el: ''
-            fis-cl: ''
+            fis-el: 'ul'
+            fis-cl: 'col-sm-9 list-unstyled'
             fis-at: ''
             fi: true
-            fi-el: div
-            fi-cl: col-sm-9
+            fi-el: li
+            fi-cl: ''
             fi-at: ''
             suffix: ''
             lb-col: false
