@@ -3,6 +3,9 @@ status: true
 dependencies:
   module:
     - node
+  enforced:
+    module:
+      - laboratory_facility
 id: laboratory_facility_type_alias
 label: 'Laboratory Facility type alias'
 type: 'canonical_entities:node'

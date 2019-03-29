@@ -3,6 +3,9 @@ status: true
 dependencies:
   module:
     - node
+  enforced:
+    module:
+      - research_glimpses
 id: research_glimpses_type_alias
 label: 'Research Glimpse type alias'
 type: 'canonical_entities:node'
