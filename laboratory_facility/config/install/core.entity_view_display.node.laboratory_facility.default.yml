@@ -15,6 +15,9 @@ dependencies:
     - field.field.node.laboratory_facility.field_type_of_the_facility
     - node.type.laboratory_facility
     - image.style.iitb_laborartory_facility_thumbnail_400_300_
+  enforced:
+    module:
+      - laboratory_facility
   module:
     - datetime
     - ds
