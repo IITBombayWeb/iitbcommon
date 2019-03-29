@@ -539,6 +539,7 @@ content:
             ow-el: div
             ow-cl: 'row mb-10'
             ow-at: ''
+            fis: true
             fis-el: 'ul'
             fis-cl: 'col-sm-9 list-unstyled'
             fis-at: ''
