@@ -17,3 +17,4 @@ dependencies:
   - slick_ui:slick_ui
   - field_permissions:field_permissions
   - acadmix_faculty:acadmix_faculty
+  - pathauto:pathauto

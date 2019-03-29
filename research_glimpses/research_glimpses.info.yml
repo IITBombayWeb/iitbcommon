@@ -14,3 +14,4 @@ dependencies:
   - drupal:path
   - ds:ds
   - slick:slick
+  - pathauto:pathauto
