@@ -1,4 +1,3 @@
-uuid: 032a7a05-3376-4ec1-ac6c-56304afa4fee
 langcode: en
 status: true
 dependencies:
@@ -18,8 +17,6 @@ dependencies:
   module:
     - text
     - user
-_core:
-  default_config_hash: H9Vz3NpTWUWqpzQDWz4IU9gFxKNgMYVHjN1t6d3hCf0
 id: node.course_details.teaser
 targetEntityType: node
 bundle: course_details

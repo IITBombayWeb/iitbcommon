@@ -1,4 +1,3 @@
-uuid: 9aee4071-83b8-46a8-83d8-041b60ace823
 langcode: en
 status: true
 dependencies:
@@ -19,8 +18,6 @@ dependencies:
     - computed_field
     - path
     - text
-_core:
-  default_config_hash: n43vXm1sQP3Z9NOF5b5FshYA8rMKC3V1oKSm-wxD-yY
 id: node.course_details.default
 targetEntityType: node
 bundle: course_details

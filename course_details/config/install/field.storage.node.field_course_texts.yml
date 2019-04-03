@@ -1,7 +1,9 @@
-uuid: 1a624fd6-e2a6-4bb6-9f9a-75cb0f5c3509
 langcode: en
 status: true
 dependencies:
+  enforced:
+    module:
+      - course_details
   module:
     - field_permissions
     - node
