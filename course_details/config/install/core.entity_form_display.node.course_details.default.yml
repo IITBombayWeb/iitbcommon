@@ -49,10 +49,10 @@ content:
   field_course_texts:
     weight: 128
     settings:
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: text_textarea
     region: content
   field_course_title:
     weight: 123

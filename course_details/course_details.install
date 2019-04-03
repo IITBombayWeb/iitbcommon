@@ -19,3 +19,103 @@ function course_details_uninstall() {
     $nodeStorage->delete($entities);
   }
 }
+
+/**
+ * Updated field type 'Course Text References' form text to text long.
+ */
+function updatehooktest1_update_8601() {
+
+  use \Drupal\field\Entity\FieldStorageConfig;
+  use \Drupal\field\Entity\FieldConfig;
+
+  $field_name = 'field_course_texts';
+  $table = 'node__'.$field_name;  
+  $table_revision = 'node_revision__'.$field_name;
+  $entity_type = 'node';
+
+  $config = \Drupal::configFactory()->getEditable('field.storage.node.'.$field_name);
+  $check_field_type = $config->get('settings.max_length');
+  //print_r($check_field_type);
+  if(isset($check_field_type) && ($check_field_type == 255)) {
+    //print_r("yes");
+    $database = \Drupal::database();
+    
+    $field_storage = FieldStorageConfig::loadByName($entity_type, $field_name);
+
+    if (is_null($field_storage)) {
+      return;
+    }
+
+    $field_data = NULL;
+    $field_data_revision = NULL;
+
+    if ($database->schema()->tableExists($table)) {
+      // The table data to restore after the update is completed.
+      $field_data = $database->select($table, 'n')
+      ->fields('n')
+      ->execute()
+      ->fetchAll();   
+    }
+
+    if ($database->schema()->tableExists($table_revision)) {
+      $field_data_revision = $database->select($table_revision, 'n')
+        ->fields('n')
+        ->execute()
+        ->fetchAll();
+    }
+
+    $new_fields = array();
+
+    // Use existing field config for new field.
+    foreach ($field_storage->getBundles() as $bundle => $label) {
+      $field = FieldConfig::loadByName($entity_type, $bundle, $field_name);
+      $new_field = $field->toArray();
+      $new_field['field_type'] = 'text_long';
+      $new_field['settings'] = array();
+
+      $new_fields[] = $new_field;
+    }
+
+    // Deleting field storage which will also delete bundles(fields).
+    $new_field_storage = $field_storage->toArray();
+    $new_field_storage['type'] = 'text_long';
+    $new_field_storage['settings'] = array();
+
+    $field_storage->delete();
+
+    //\Drupal::entityManager()->clearCachedFieldDefinitions();
+
+
+    // Purge field data now to allow new field and field_storage with same name
+    // to be created. You may need to increase batch size.
+    field_purge_batch(10);
+
+    // Create new field storage.
+    $new_field_storage = FieldStorageConfig::create($new_field_storage);
+    $new_field_storage->save();
+
+    // Create new fields.
+    foreach ($new_fields as $new_field) {
+      $new_field = FieldConfig::create($new_field);
+      $new_field->save();
+    }
+
+    // Restore existing data in the same table.
+    if (!is_null($field_data)) {
+      foreach ($field_data as $field_data_each) {
+        $database->insert($table)
+        ->fields((array) $field_data_each)
+        ->execute();
+      }
+    }
+
+    // Restore existing data in the same table.
+    if (!is_null($field_data_revision)) {
+      foreach ($field_data_revision as $field_data_revision_each) {
+        $database->insert($table_revision)
+        ->fields((array) $field_data_revision_each)
+        ->execute();
+      }
+    }
+  }
+}
