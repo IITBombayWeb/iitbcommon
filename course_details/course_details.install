@@ -25,7 +25,7 @@ function course_details_uninstall() {
 /**
  * Updated field type 'Course Text References' form text to text long.
  */
-function updatehooktest1_update_8601() {
+function course_details_update_8601() {
 
   $field_name = 'field_course_texts';
   $table = 'node__'.$field_name;  
