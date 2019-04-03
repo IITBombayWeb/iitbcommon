@@ -1,4 +1,6 @@
 <?php
+use \Drupal\field\Entity\FieldStorageConfig;
+use \Drupal\field\Entity\FieldConfig;
 
 /**
 * Implements hook_uninstall().
@@ -24,9 +26,6 @@ function course_details_uninstall() {
  * Updated field type 'Course Text References' form text to text long.
  */
 function updatehooktest1_update_8601() {
-
-  use \Drupal\field\Entity\FieldStorageConfig;
-  use \Drupal\field\Entity\FieldConfig;
 
   $field_name = 'field_course_texts';
   $table = 'node__'.$field_name;  
