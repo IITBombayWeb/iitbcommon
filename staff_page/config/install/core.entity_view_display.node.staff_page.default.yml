@@ -325,7 +325,7 @@ content:
             ow-def-cl: false
             fis-def-at: false
             fi-def-at: false
-    type: text_default
+    type: string
     region: ds_content
   field_r_d_projects:
     weight: 11
