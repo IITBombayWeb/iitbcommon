@@ -94,6 +94,29 @@ function course_details_update_8601() {
     $new_field_storage = FieldStorageConfig::create($new_field_storage);
     $new_field_storage->save();
 
+    \Drupal::entityTypeManager()
+      ->getStorage('entity_form_display')
+      ->load('node.course_details.default')
+      ->setComponent($field_name, [
+        'type' => 'text_textarea',
+        'weight' => 128,
+        'region' => 'content',
+        'settings' => ['rows' => 5, 'placeholder' => ''],
+        'third_party_settings' => []
+      ])->save();
+
+    \Drupal::entityTypeManager()
+      ->getStorage('entity_view_display')
+      ->load('node.course_details.default')
+      ->setComponent($field_name, [
+        'type' => 'text_default',
+        'weight' => 108,
+        'region' => 'content',
+        'label' => 'above',
+        'settings' => [],
+        'third_party_settings' => []
+      ])->save();
+
     // Create new fields.
     foreach ($new_fields as $new_field) {
       $new_field = FieldConfig::create($new_field);
