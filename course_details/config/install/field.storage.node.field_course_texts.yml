@@ -14,8 +14,9 @@ third_party_settings:
 id: node.field_course_texts
 field_name: field_course_texts
 entity_type: node
-type: text_long
-settings: {  }
+type: text
+settings:
+  max_length: 255
 module: text
 locked: false
 cardinality: 1
