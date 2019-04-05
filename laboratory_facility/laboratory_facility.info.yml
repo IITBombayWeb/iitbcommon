@@ -1,8 +1,8 @@
-name: 'Laboratory Facility'
+name: 'IITB laboratory facility content type'
 type: module
-description: 'Laboratory Facility Content Type'
+description: 'Laboratory facility content type'
 core: 8.x
-package: 'IITB Content Type'
+package: 'IITB content type'
 dependencies:
   - drupal:menu_ui
   - drupal:node
@@ -11,5 +11,10 @@ dependencies:
   - drupal:text
   - drupal:user
   - drupal:path
+  - drupal:image
+  - drupal:file
+  - ds:ds
+  - slick_ui:slick_ui
   - field_permissions:field_permissions
   - acadmix_faculty:acadmix_faculty
+  - pathauto:pathauto

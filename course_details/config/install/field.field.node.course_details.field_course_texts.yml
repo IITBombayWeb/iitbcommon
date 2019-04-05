@@ -5,8 +5,8 @@ dependencies:
     - field.storage.node.field_course_texts
     - node.type.course_details
   enforced:
-      module:
-        - course_details
+    module:
+      - course_details
   module:
     - text
 id: node.course_details.field_course_texts
@@ -20,4 +20,4 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text
+field_type: text_long

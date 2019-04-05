@@ -1,8 +1,8 @@
-name: 'Course Allotment'
+name: 'IITB course allotment content type'
 type: module
-description: 'Course Allotment Content Type'
+description: 'Course allotment content type'
 core: 8.x
-package: 'IITB Content Type'
+package: 'IITB content type'
 dependencies:
   - drupal:menu_ui
   - drupal:node

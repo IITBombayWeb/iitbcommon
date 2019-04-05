@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   enforced:
-      module:
-        - course_details
+    module:
+      - course_details
   module:
     - field_permissions
     - node

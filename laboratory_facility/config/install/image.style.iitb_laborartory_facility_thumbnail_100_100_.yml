@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - laboratory_facility
+name: iitb_laborartory_facility_thumbnail_100_100_
+label: 'IITB Laborartory Facility Thumbnail (100×100)'
+effects:
+  f23f88af-3809-4e04-a360-a93629a47668:
+    uuid: f23f88af-3809-4e04-a360-a93629a47668
+    id: image_scale
+    weight: 1
+    data:
+      width: 100
+      height: 100
+      upscale: false
