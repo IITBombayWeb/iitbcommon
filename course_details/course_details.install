@@ -98,11 +98,11 @@ function course_details_update_8601() {
       ->getStorage('entity_form_display')
       ->load('node.course_details.default')
       ->setComponent($field_name, [
-        'type' => 'text_textarea',
         'weight' => 128,
-        'region' => 'content',
         'settings' => ['rows' => 5, 'placeholder' => ''],
-        'third_party_settings' => []
+        'third_party_settings' => [],
+        'type' => 'text_textarea',
+        'region' => 'content'
       ])->save();
 
     \Drupal::entityTypeManager()
