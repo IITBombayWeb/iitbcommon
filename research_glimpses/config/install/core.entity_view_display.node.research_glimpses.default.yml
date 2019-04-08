@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.research_glimpses.field_category_glimpse
     - field.field.node.research_glimpses.field_faculty_name_ref
     - field.field.node.research_glimpses.field_image_glimpse
+    - image.style.iitb_research_glimpses_400_300
     - node.type.research_glimpses
   enforced:
     module:
@@ -31,6 +32,7 @@ third_party_settings:
         link_custom: ''
         classes:
           layout_class: {  }
+          ds_content: {  }
     regions:
       ds_content:
         - links
@@ -44,7 +46,7 @@ bundle: research_glimpses
 mode: default
 content:
   body:
-    label: above
+    label: hidden
     type: text_default
     weight: 2
     settings: {  }
@@ -55,10 +57,9 @@ content:
           settings:
             lb: ''
             prefix: ''
-            lbw: true
             lbw-el: h4
-            lbw-cl: 'uppercase dark-grey mb_5 node-field-label'
-            lbw-at: 'style="text-align:center;"'
+            lbw-cl: ''
+            lbw-at: ''
             lb-col: true
             ow-el: ''
             ow-cl: ''
@@ -70,6 +71,7 @@ content:
             fi-cl: ''
             fi-at: ''
             suffix: ''
+            lbw: false
             ow: false
             ow-def-at: false
             ow-def-cl: false
@@ -92,12 +94,12 @@ content:
             prefix: ''
             lbw: true
             lbw-el: h4
-            lbw-cl: 'uppercase dark-grey mb_5 node-field-label'
+            lbw-cl: 'mb-5 node-field-label'
             lbw-at: ''
             lb-col: true
             ow: true
             ow-el: div
-            ow-cl: mb_20
+            ow-cl: mb-15
             ow-at: ''
             fis-el: ''
             fis-cl: ''
@@ -129,25 +131,25 @@ content:
             prefix: ''
             lbw: true
             lbw-el: h4
-            lbw-cl: 'uppercase dark-grey mb_5 node-field-label'
+            lbw-cl: mb-5
             lbw-at: ''
             ow: true
             ow-el: div
-            ow-cl: mb_20
+            ow-cl: mb-15
             ow-at: ''
-            fis-el: ''
-            fis-cl: ''
+            fis: true
+            fis-el: ul
+            fis-cl: list-unstyled
             fis-at: ''
-            fi-el: ''
-            fi-cl: ''
+            fi: true
+            fi-el: li
+            fi-cl: mb-10
             fi-at: ''
             suffix: ''
             lb-col: false
             ow-def-at: false
             ow-def-cl: false
-            fis: false
             fis-def-at: false
-            fi: false
             fi-def-at: false
     type: entity_reference_label
     region: ds_content
@@ -160,7 +162,7 @@ content:
       optionset_thumbnail: ''
       skin: default
       skin_thumbnail: ''
-      image_style: max_650x650
+      image_style: iitb_research_glimpses_400_300
       thumbnail_style: ''
       responsive_image_style: ''
       thumbnail_effect: ''
