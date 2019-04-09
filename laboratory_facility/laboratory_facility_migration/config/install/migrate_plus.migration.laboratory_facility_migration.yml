@@ -1,0 +1,86 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - laboratory_facility_migration
+id: laboratory_facility_migration
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - CSV
+migration_group: iitbmigration
+label: 'Laboratory Facility content migration'
+source:
+  plugin: csv
+  path: /var/www/migrationdata/csv/laboratoryfacility-sample.csv
+  delimiter: ','
+  enclosure: '"'
+  header_row_count: 1
+  keys:
+    - id
+  constants:
+    file_source: /var/www/migrationdata/labfac
+    file_dest: 'public://labfacimages/'
+process:
+  source_path:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: image_file
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/file_source
+        - image_file
+  type:
+    plugin: default_value
+    default_value: laboratory_facility
+  title: name_of_facility
+  field_labfac_image:
+    plugin: file_import
+    source: '@source_path'
+    destination: constants/file_dest
+  body/value: body
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  field_purpose_of_equipment/value: purpose_of_equipment
+  field_purpose_of_equipment/format:
+    plugin: default_value
+    default_value: basic_html
+  field_type_of_the_facility/value: type_of_the_facility
+  field_type_of_the_facility/format:
+    plugin: default_value
+    default_value: basic_html
+  field_instrument_class:
+    plugin: explode
+    delimiter: ' | '
+    source: instrument_class
+  field_status_of_facility/value: status_of_facility
+  field_status_of_facility/format:
+    plugin: default_value
+    default_value: basic_html
+  field_indented_by_faculty_:
+    plugin: entity_lookup
+    entity_type: node
+    bundle: fac_page
+    source: indented_by_faculty
+  field_date_of_purchase:
+    plugin: format_date
+    from_format: 'd/m/Y H:i:s'
+    to_format: 'Y-m-d\TH:i:s'
+    from_timezone: 'Asia/Kolkata'
+    to_timezone: 'UTC'
+    source: date_of_purchase   
+  field_cost_of_purchase: cost_of_purchase
+  field_facility_access_available_: facility_access_available_for
+  field_source_of_funding: source_of_funding
+destination:
+  plugin: 'entity:node'
+  bundle: laboratory_facility
+migration_dependencies:
+  required: {  }
+  optional: {  }
