@@ -8,8 +8,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
-    parent: ''
+    available_menus:
+      - main
+    parent: 'main:'
 name: 'Student Page'
 type: student_page
 description: 'Create a Student page (personal information, contact, and CV upload)'
