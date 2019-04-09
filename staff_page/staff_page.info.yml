@@ -17,3 +17,4 @@ dependencies:
   - name:name
   - field_permissions:field_permissions
   - spamspan:spamspan
+  - nodeorder:nodeorder
