@@ -324,7 +324,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: span
-          element_class: 'fas fa-calendar-alt'
+          element_class: 'fa fa-envelope'
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false
@@ -346,10 +346,10 @@ display:
             label: ''
             element_label_colon: 0
             exclude: 0
-            element_type_enable: 0
-            element_type: ''
-            element_class_enable: 0
-            element_class: ''
+            element_type_enable: 1
+            element_type: span
+            element_class_enable: 1
+            element_class: 'fas fa-calendar-alt'
             element_label_type_enable: 0
             element_label_type: ''
             element_label_class_enable: 0
@@ -450,7 +450,7 @@ display:
             preserve_tags: ''
             html: false
           element_type: span
-          element_class: 'date fas fa-clock'
+          element_class: 'fa fa-phone'
           element_label_type: ''
           element_label_class: ''
           element_label_colon: false

@@ -18,3 +18,6 @@ dependencies:
   - field_permissions:field_permissions
   - spamspan:spamspan
   - nodeorder:nodeorder
+  - better_exposed_filters:better_exposed_filters
+  - responsive_image:responsive_image
+  - views_bootstrap:views_bootstrap
