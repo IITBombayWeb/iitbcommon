@@ -29,7 +29,6 @@ process:
   body/format:
     plugin: default_value
     default_value: basic_html
-  field_staff_photo: photo
   field_staff_full_name/given: first_name
   field_staff_full_name/middle: middle_name
   field_staff_full_name/family: last_name

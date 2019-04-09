@@ -30,7 +30,7 @@ process:
     plugin: default_value
     default_value: basic_html
   field_course_code: course_code
-  field_course_texts/value:  course_text_ref
+  field_course_texts/value: course_text_ref
   field_course_texts/format:
     -
       plugin: default_value
@@ -55,7 +55,6 @@ process:
     -
      plugin: default_value
      default_value: basic_html
-  field_total_credits: total_credit
 destination:
   plugin: 'entity:node'
   bundle: course_details
