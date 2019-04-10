@@ -15,7 +15,6 @@ dependencies:
     module:
       - course_details
   module:
-    - computed_field
     - ds
     - options
     - text
@@ -265,44 +264,13 @@ content:
     type: list_default
     region: ds_content
   field_total_credits:
-    weight: 7
+    weight: 10
     label: above
     settings:
-      thousand_separator: ''
-      prefix_suffix: '1'
-      cache_unit: '-1'
-      cache_duration: '1'
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw: true
-            lbw-el: div
-            lbw-cl: 'col-sm-2 fw-bold'
-            lbw-at: ''
-            ow: true
-            ow-el: div
-            ow-cl: 'row mb-10'
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: col-sm-10
-            fi-at: ''
-            suffix: ''
-            lb-col: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
-    type: computed_integer
-    region: ds_content
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_tutorial_credit:
     weight: 5
     label: above

@@ -10,5 +10,4 @@ dependencies:
   - drupal:text
   - drupal:user
   - drupal:path
-  - computed_field:computed_field
   - field_permissions:field_permissions

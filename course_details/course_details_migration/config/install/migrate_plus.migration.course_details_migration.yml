@@ -40,6 +40,7 @@ process:
     -
       plugin: default_value
       default_value: basic_html
+  field_total_credits: total_credits
   field_lecture_credit/value: lecture_credits
   field_lecture_credit/format:
     -
