@@ -1,0 +1,8 @@
+name: 'IITB common course allotment migration'
+type: module
+description: 'Import/migrate data from CSV into course allotment content'
+core: 8.x
+package: 'IITB common migration'
+dependencies:
+  - migrate_tools:migrate_tools
+  - course_allotment:course_allotment

@@ -379,41 +379,6 @@ content:
             fi-def-at: false
     type: slick_image
     region: ds_content
-  field_name_of_facility:
-    weight: 1
-    label: above
-    settings: {  }
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw: true
-            lbw-el: div
-            lbw-cl: 'col-sm-3 fw-bold'
-            lbw-at: ''
-            ow: true
-            ow-el: div
-            ow-cl: 'row mb-10'
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: col-sm-9
-            fi-at: ''
-            suffix: ''
-            lb-col: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
-    type: text_default
-    region: ds_content
   field_purpose_of_equipment:
     weight: 1
     label: above

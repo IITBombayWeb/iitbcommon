@@ -18,3 +18,4 @@ dependencies:
   - field_permissions:field_permissions
   - acadmix_faculty:acadmix_faculty
   - pathauto:pathauto
+  - datatables:datatables

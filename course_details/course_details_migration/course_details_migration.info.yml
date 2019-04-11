@@ -1,0 +1,8 @@
+name: 'IITB common course details migration'
+type: module
+description: 'Import/migrate data from CSV into course details content'
+core: 8.x
+package: 'IITB common migration'
+dependencies:
+  - migrate_tools:migrate_tools
+  - course_details:course_details

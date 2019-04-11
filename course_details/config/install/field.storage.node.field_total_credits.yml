@@ -2,10 +2,9 @@ langcode: en
 status: true
 dependencies:
   enforced:
-      module:
-        - course_details
+    module:
+      - course_details
   module:
-    - computed_field
     - field_permissions
     - node
 third_party_settings:
@@ -14,11 +13,12 @@ third_party_settings:
 id: node.field_total_credits
 field_name: field_total_credits
 entity_type: node
-type: computed_integer
+type: string
 settings:
-  unsigned: false
-  size: normal
-module: computed_field
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

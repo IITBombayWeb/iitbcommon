@@ -1,0 +1,9 @@
+name: 'IITB common laboratory_facility migration'
+type: module
+description: 'Import/migrate data from CSV into laboratory_facility content'
+core: 8.x
+package: 'IITB common migration'
+dependencies:
+  - migrate_tools:migrate_tools
+  - migrate_file:migrate_file
+  - laboratory_facility:laboratory_facility
