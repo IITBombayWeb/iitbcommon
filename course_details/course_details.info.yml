@@ -1,9 +1,9 @@
-sname: 'IITB course details content type'
+name: 'IITB course details content type'
 type: module
 description: 'Course details content type'
 core: 8.x
 package: 'IITB content type'
-dependencies:
+dependencies: 
   - drupal:menu_ui
   - drupal:node
   - drupal:options
