@@ -11,4 +11,3 @@ dependencies:
   - drupal:user
   - drupal:path
   - field_permissions:field_permissions
-  - pathauto:pathauto
