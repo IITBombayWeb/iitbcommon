@@ -9,12 +9,16 @@ dependencies:
     - field.storage.node.field_staff_photo
     - node.type.staff_page
     - responsive_image.styles.acad_fac_narrow
+    - system.menu.main
     - taxonomy.vocabulary.staff_category
   content:
-    - 'taxonomy_term:staff_category:3bd4577d-ac49-4375-af1d-849334429fdd'
-    - 'taxonomy_term:staff_category:61f81a1d-8446-4a8a-bba4-c53561f60af2'
-    - 'taxonomy_term:staff_category:bd2a34b2-033d-42eb-886d-e525b9da1d61'
-    - 'taxonomy_term:staff_category:ff16007a-c011-4c93-abee-57f20521bc16'
+    - 'taxonomy_term:research_area:166013ab-4c01-4343-841b-7b6eb089261d'
+    - 'taxonomy_term:research_area:42b476a6-59dc-4091-a77c-64bf4dcefbdd'
+    - 'taxonomy_term:research_area:4a4fac9e-317b-43f4-a325-1c93f12fb244'
+    - 'taxonomy_term:research_area:d939dfa8-191d-4fe2-b1b4-f3ff220edcb8'
+  enforced:
+    module:
+      - staff_page
   module:
     - better_exposed_filters
     - node
@@ -24,9 +28,6 @@ dependencies:
     - taxonomy
     - user
     - views_bootstrap
-  enforced:
-    module:
-      - staff_page
 id: dept_staff
 label: 'Dept Staff'
 module: views
@@ -661,6 +662,15 @@ display:
       display_extenders: {  }
       path: staff-directory
       exposed_block: true
+      menu:
+        type: normal
+        title: Staffs
+        description: 'View the Department staff Directory'
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
     cache_metadata:
       max-age: -1
       contexts:
