@@ -14,7 +14,6 @@ dependencies:
     - field.field.node.laboratory_facility.field_status_of_facility
     - field.field.node.laboratory_facility.field_type_of_the_facility
     - node.type.laboratory_facility
-    - image.style.iitb_laborartory_facility_thumbnail_400_300_
   enforced:
     module:
       - laboratory_facility
@@ -53,7 +52,6 @@ third_party_settings:
         - field_status_of_facility
         - field_indented_by_faculty_
         - field_date_of_purchase
-        - field_cost_of_purchase
         - field_facility_access_available_
         - field_source_of_funding
         - body
@@ -65,7 +63,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 10
+    weight: 9
     settings: {  }
     third_party_settings:
       ds:
@@ -97,47 +95,12 @@ content:
             fi: false
             fi-def-at: false
     region: ds_content
-  field_cost_of_purchase:
-    type: string
-    weight: 7
-    region: ds_content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw: true
-            lbw-el: div
-            lbw-cl: 'col-sm-3 fw-bold'
-            lbw-at: ''
-            ow: true
-            ow-el: div
-            ow-cl: 'row mb-10'
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: col-sm-9
-            fi-at: ''
-            suffix: ''
-            lb-col: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
   field_date_of_purchase:
     weight: 6
     label: above
     settings:
       timezone_override: ''
+      date_format: d-m-Y
     third_party_settings:
       ds:
         ft:
@@ -167,10 +130,10 @@ content:
             fis: false
             fis-def-at: false
             fi-def-at: false
-    type: datetime_plain
+    type: datetime_custom
     region: ds_content
   field_facility_access_available_:
-    weight: 8
+    weight: 7
     label: above
     settings: {  }
     third_party_settings:
@@ -285,7 +248,7 @@ content:
       optionset_thumbnail: ''
       skin: default
       skin_thumbnail: ''
-      image_style: iitb_laborartory_facility_thumbnail_400_300_
+      image_style: iitb_laborartory_facility_700_300
       thumbnail_style: ''
       responsive_image_style: ''
       thumbnail_effect: ''
@@ -358,8 +321,8 @@ content:
             lbw-el: ''
             lbw-cl: ''
             lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
+            ow-el: div
+            ow-cl: 'row mb-10'
             ow-at: ''
             fis-el: ''
             fis-cl: ''
@@ -397,7 +360,7 @@ content:
             lbw-at: ''
             ow: true
             ow-el: div
-            ow-cl: 'row mb-10'
+            ow-cl: 'row mb-10 mt-10'
             ow-at: ''
             fis-el: ''
             fis-cl: ''
@@ -417,7 +380,7 @@ content:
     region: ds_content
   field_source_of_funding:
     type: list_default
-    weight: 9
+    weight: 8
     region: ds_content
     label: above
     settings: {  }
@@ -505,7 +468,7 @@ content:
             ow-cl: 'row mb-10'
             ow-at: ''
             fis: true
-            fis-el: 'ul'
+            fis-el: ul
             fis-cl: 'col-sm-9 list-unstyled'
             fis-at: ''
             fi: true
@@ -516,11 +479,11 @@ content:
             lb-col: false
             ow-def-at: false
             ow-def-cl: false
-            fis: false
             fis-def-at: false
             fi-def-at: false
     type: list_default
     region: ds_content
 hidden:
+  field_cost_of_purchase: true
   langcode: true
   links: true
