@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_instrument_class
     - field.storage.node.field_purpose_of_equipment
     - node.type.laboratory_facility
-    - system.menu.main
   enforced:
     module:
       - laboratory_facility
@@ -303,7 +302,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Facility Access Available For'
+          label: 'Facility Access'
           exclude: false
           alter:
             alter_text: false
@@ -421,10 +420,10 @@ display:
       display_extenders: {  }
       path: laboratory-facility
       menu:
-        type: normal
+        type: none
         title: Laboratories
         description: ''
-        expanded: true
+        expanded: false
         parent: ''
         weight: 0
         context: '0'
