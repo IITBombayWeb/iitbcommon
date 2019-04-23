@@ -9,7 +9,6 @@ dependencies:
     - field.storage.node.field_staff_photo
     - node.type.staff_page
     - responsive_image.styles.acad_fac_narrow
-    - system.menu.main
     - taxonomy.vocabulary.staff_category
   content:
     - 'taxonomy_term:research_area:166013ab-4c01-4343-841b-7b6eb089261d'
@@ -663,7 +662,7 @@ display:
       path: staff-directory
       exposed_block: true
       menu:
-        type: normal
+        type: none
         title: Staffs
         description: 'View the Department staff Directory'
         expanded: false
