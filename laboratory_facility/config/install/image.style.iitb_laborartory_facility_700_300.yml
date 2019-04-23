@@ -4,14 +4,14 @@ dependencies:
   enforced:
     module:
       - laboratory_facility
-name: iitb_laborartory_facility_thumbnail_400_300_
-label: 'IITB Laborartory Facility Thumbnail (400×300)'
+name: iitb_laborartory_facility_700_300
+label: 'IITB Laborartory Facility (700×300)'
 effects:
   707358fc-edda-4f6f-a8c8-e2677c59aa24:
     uuid: 707358fc-edda-4f6f-a8c8-e2677c59aa24
     id: image_scale_and_crop
     weight: 1
     data:
-      width: 400
+      width: 700
       height: 300
       anchor: center-center
