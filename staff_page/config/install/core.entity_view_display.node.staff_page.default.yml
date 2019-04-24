@@ -61,8 +61,6 @@ third_party_settings:
         - field_r_d_projects
         - field_awards_and_fellowships
         - field_staff_head
-_core:
-  default_config_hash: Cm1uFYqW3VT1qsQdA1Z6idLL589r9MSFswH1n5p1KF0
 id: node.staff_page.default
 targetEntityType: node
 bundle: staff_page
