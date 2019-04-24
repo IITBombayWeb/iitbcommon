@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - staff_page
+id: department_staff_alias
+label: 'Department staff Alias'
+type: 'canonical_entities:node'
+pattern: 'staff/[node:title]'
+selection_criteria:
+  15079ae2-ae28-406c-bdb1-aa39eae76917:
+    id: node_type
+    bundles:
+      staff_page: staff_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 15079ae2-ae28-406c-bdb1-aa39eae76917
+selection_logic: and
+weight: -5
+relationships: {  }
