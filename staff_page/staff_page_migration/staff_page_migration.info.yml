@@ -1,7 +1,9 @@
 name: 'IITB common staff page migration'
 type: module
 description: 'Import/migrate data from CSV into staff page content'
+# Core: Below to be removed later, Once 9.x test is successful.
 core: 8.x
+core_version_requirement: ^8 || ^9
 package: 'IITB common migration'
 dependencies:
   - migrate_tools:migrate_tools
